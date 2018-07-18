@@ -122,7 +122,7 @@ module.exports.connectAdvanced = function (
         __selector: null,
         __subscription: null,
         __notifyNestedSubs: null
-      }
+      },
 
       onLoad: function () {
         if (wrappedObject.onLoad) wrappedObject.onLoad.call(this)

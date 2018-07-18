@@ -85,7 +85,7 @@ module.exports.connectAdvanced = function (
 
   return function wrapWithConnect(wrappedObject) {
     invariant(
-      typeof wrappedObject == 'object',
+      typeof wrappedObject == 'object' || typeof wrappedObject == 'function',
       `You must pass a component to the function returned by ` +
       `${methodName}. Instead received ${JSON.stringify(wrappedObject)}`
     )
